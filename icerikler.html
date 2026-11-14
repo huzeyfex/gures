@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Güreşe yeni başlayanlar için beş temel güreş tekniğine kısa bir bakış.">
+  <meta name="description" content="Güreş türlerini başlıklarına göre arayın ve kısa tanıtımlarını keşfedin.">
   <title>İçerikler | Minder Rehberi</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -25,6 +26,18 @@
       <h1>Güreş içerikleri</h1>
       <p>Geleneksel ve modern güreş türlerini, öne çıkan özellikleri ve yapıldıkları yerlerle tanı.</p>
     </header>
+
+    <section class="search-panel" aria-label="Güreş türlerinde arama">
+      <div class="search-controls">
+        <div class="search-field">
+          <label for="kart-arama">Kart başlığına göre ara</label>
+          <input id="kart-arama" type="search" autocomplete="off" placeholder="Örn. Aba Güreşi">
+        </div>
+        <button id="arama-temizle" type="button">Temizle</button>
+      </div>
+      <p id="sonuc-sayaci" class="search-status" aria-live="polite" aria-atomic="true"></p>
+      <p id="sonuc-yok" class="search-status" role="status" hidden>Sonuç bulunamadı.</p>
+    </section>
 
     <div class="technique-grid" aria-label="Güreş türleri">
       <div class="kart">
