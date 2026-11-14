@@ -140,22 +140,33 @@ a:focus-visible {
   padding-bottom: 4rem;
 }
 
-.technique-card {
+.technique-card,
+.kart {
   padding: 1.25rem;
   border: 1px solid var(--line);
   border-radius: 0.8rem;
   background: var(--surface);
 }
 
-.technique-card h2 {
+.technique-card h2,
+.kart h2 {
   margin: 0 0 0.6rem;
   font-size: 1.2rem;
   line-height: 1.35;
 }
 
-.technique-card p {
+.technique-card p,
+.kart p {
   margin: 0;
   color: var(--muted);
+}
+
+.kart p + p {
+  margin-top: 0.75rem;
+}
+
+.kart strong {
+  color: var(--ink);
 }
 
 .about-content {
